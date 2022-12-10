@@ -46,3 +46,9 @@ _note regarding types:_
 - Electron provides its own type definitions, so you don't need @types/electron installed!
   source: https://www.npmjs.com/package/@types/electron
 - There were no types available for `electron-next` at the time of creating this example, so until they are available there is a file `electron-next.d.ts` in `electron-src` directory.
+
+## Notes for me (Mochi)
+
+"clean" : remove recursively dist/ main/ renderer/ folders.
+"build-renderer" : create renderer/.next and renderer/out folders. NextJS structure is in the .next/ folder, and the app code is transpiled to the out/ folder.
+"build-electron" : create main/ folder. electron-src/index.ts and electron-src/preload.ts are transpiled to the main/ folder.
