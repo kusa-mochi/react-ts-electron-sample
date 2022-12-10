@@ -1,4 +1,8 @@
 {
+  "name": "app",
+  "version": "0.1.0",
+  "author": "Mochi <whoatemyapplepie@gmail.com> (https://slash-mochi.net/)",
+  "description": "sample electron app project using NextJS + TypeScript.",
   "private": true,
   "main": "main/index.js",
   "productName": "ElectronTypescriptNext",
