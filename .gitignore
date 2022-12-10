@@ -105,3 +105,4 @@ dist
 
 # additional ignore list
 renderer/out/
+main/
