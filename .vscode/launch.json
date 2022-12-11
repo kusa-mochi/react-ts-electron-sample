@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug Main Process",
+            "name": "Electron Main",
             "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
             "runtimeArgs": [
                 ".",
@@ -21,9 +21,19 @@
         {
             "type": "chrome",
             "request": "attach",
-            "name": "Attach to Render Process",
+            "name": "Electron Renderer",
             "port": 9222,
-            "webRoot": "${workspaceFolder}/renderer/out"
+            "webRoot": "${workspaceFolder}/renderer",
+            "timeout": 60000
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Electron All",
+            "configurations": [
+                "Electron Main",
+                "Electron Renderer"
+            ]
         }
     ]
 }
